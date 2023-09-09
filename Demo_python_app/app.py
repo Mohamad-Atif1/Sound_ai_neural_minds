@@ -4,7 +4,12 @@ import numpy as np
 import librosa
 
 # Load the model
-model = tf.saved_model.load('saved_model.pb')
+import os
+
+app_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(app_dir, 'saved_model.pb')
+model = tf.saved_model.load(model_path)
+# model = tf.saved_model.load('saved_model.pb')
 # model = tf.saved_model.load('./')
 
 # Define the classes
