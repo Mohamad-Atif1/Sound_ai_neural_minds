@@ -3,8 +3,7 @@ import tensorflow as tf
 import numpy as np
 import librosa
 
-# Load the model
-import os
+
 
 
 model = tf.saved_model.load('./')
