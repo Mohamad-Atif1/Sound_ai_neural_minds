@@ -6,7 +6,7 @@ import librosa
 
 
 
-model = tf.saved_model.load('./')
+model = tf.saved_model.load('./Demo_python_app')
 
 # Define the classes
 classes = [  "Asthma" ,  "Asthma and lung fibrosis" ,  "BRON" ,  "COPD" ,  "Heart Failure" ,  "Heart Failure + COPD" ,  "Heart Failure + Lung Fibrosis" ,  "Lung Fibrosis" ,  "N" ,  "Plueral Effusion" ,  "pneumonia" ,  ]
