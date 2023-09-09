@@ -3,7 +3,6 @@ import tensorflow as tf
 import numpy as np
 import librosa
 
-subprocess.check_call(["pip", "install", "tensorflow"])
 # Load the model
 model = tf.saved_model.load('./')
 
