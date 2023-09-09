@@ -6,11 +6,8 @@ import librosa
 # Load the model
 import os
 
-app_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(app_dir, 'saved_model.pb')
-model = tf.saved_model.load(model_path)
-# model = tf.saved_model.load('saved_model.pb')
-# model = tf.saved_model.load('./')
+
+model = tf.saved_model.load('./')
 
 # Define the classes
 classes = [  "Asthma" ,  "Asthma and lung fibrosis" ,  "BRON" ,  "COPD" ,  "Heart Failure" ,  "Heart Failure + COPD" ,  "Heart Failure + Lung Fibrosis" ,  "Lung Fibrosis" ,  "N" ,  "Plueral Effusion" ,  "pneumonia" ,  ]
